@@ -1,0 +1,20 @@
+.wp-pagenavi {
+  clear: both;
+
+  a,
+  span {
+    text-decoration: none;
+    border: 1px solid #bfbfbf;
+    padding: 3px 5px;
+    margin: 2px;
+  }
+
+  a:hover {
+    border-color: #000;
+  }
+
+  span.current {
+    border-color: #000;
+    font-weight: bold;
+  }
+}

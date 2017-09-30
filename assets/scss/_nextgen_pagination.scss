@@ -1,0 +1,51 @@
+.ngg-navigation {
+  font-size: .9em !important;
+  clear: both !important;
+  display: block !important;
+  padding-top: 15px;
+  padding-bottom: 3px;
+  text-align: center;
+
+  span {
+    font-weight: bold;
+    margin: 0 6px;
+  }
+
+  a {
+    &.page-numbers, &.next, &.prev {
+      border: 1px solid #ddd;
+      margin-right: 3px;
+      padding: 3px 8px;
+      text-decoration: none;
+    }
+  }
+
+  span {
+    &.page-numbers, &.next, &.prev {
+      border: 1px solid #ddd;
+      margin-right: 3px;
+      padding: 3px 8px;
+      text-decoration: none;
+    }
+  }
+
+  a {
+    &.page-numbers:hover, &.next:hover, &.prev:hover {
+      background-color: #06c;
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+  }
+
+  span {
+    &.page-numbers:hover, &.next:hover, &.prev:hover {
+      background-color: #06c;
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.ngg-clear {
+  clear: both;
+}
