@@ -1,7 +1,7 @@
 <?php
-define('DB_NAME', 'DBNAME');
-define('DB_USER', 'DBUSER');
-define('DB_PASSWORD', 'DBPASS');
+define('DB_NAME', 'kefirchita');
+define('DB_USER', 'kefirchita');
+define('DB_PASSWORD', 'kefirchita');
 
 define('DB_HOST', 'localhost');
 
@@ -14,7 +14,7 @@ define('CACHE_WRITE_WHITELIST','_transient|limit_login_'); // do not reset cache
 define('DB_CHARSET', 'utf8mb4');
 define('DB_COLLATE', 'utf8mb4_unicode_ci');
 
-$table_prefix  = 'ldgfl_';
+$table_prefix  = 'frpht_';
 
 define('WPLANG', 'ru_RU');
 define('DISALLOW_FILE_EDIT', true);

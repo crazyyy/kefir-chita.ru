@@ -1,6 +1,6 @@
 {
-  "domain": "wp-framework.dev",
-  "theme": "wp-framework",
+  "domain": "kefir-chita.dev",
+  "theme": "wp-kefir-chita",
   "path": {
     "base": {
       "src":"assets/",
