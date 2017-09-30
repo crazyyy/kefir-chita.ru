@@ -133,7 +133,7 @@ function imgCoverIt(id) {
                 imgCover[0].style.top = "0px";
             }
 
-            
+
             var weddingListW = weddingList.clientWidth,
                 prev = getPrev(i,1),
                 prev2 = getPrev(i,2),
@@ -158,8 +158,8 @@ function imgCoverIt(id) {
 
                         imgParent[i].style.top = posPrev2.bottom+'px';
                         imgParent[i].style.left = imgParent[prev2].style.left;
-                        imgParent[i].style.right = imgParent[prev2].style.right;     
-                      
+                        imgParent[i].style.right = imgParent[prev2].style.right;
+
                     }else{
                         imgParent[i].style.top = posPrev3.bottom+'px';
                         imgParent[i].style.left = imgParent[prev3].style.left;
@@ -182,7 +182,7 @@ function imgCoverIt(id) {
             thisPos = +(toNum(imgParent[i].style.top)) + +pHeight;
             gallBot = ((thisPos>gallBot)?thisPos:gallBot);
             weddingList.style.height = gallBot+'px';
-      
+
         }
     }
     console.log('done');
@@ -208,8 +208,8 @@ function ready() {
 
 
     imgCoverIt('weddingList')
-    
-  
+
+
     window.onresize = resize;
     function resize(){
       imgCoverIt('weddingList');
