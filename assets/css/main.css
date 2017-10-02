@@ -3765,10 +3765,6 @@ body {
 }
 
 /*         Bottom navigation       */
-.bottom-nav {
-  margin-bottom: 10px;
-}
-
 /*     Footer        */
 .footer {
   padding: 25px 0;
@@ -3956,7 +3952,7 @@ body {
   display: inline-block;
   float: right;
   width: 500px;
-  padding: 70px 0;
+  padding: 0 0 70px;
 }
 
 .contact__form-inner {
@@ -4751,7 +4747,6 @@ a.services-rest__item-img-wrap {
   background-position: -370px 10px;
 }
 
-/*        Fee       */
 .price__fee {
   margin-bottom: 30px;
   padding: 0 40px;
@@ -4780,7 +4775,6 @@ a.services-rest__item-img-wrap {
   margin-bottom: 20px;
 }
 
-/*    price -> services     */
 .price__serv {
   margin-bottom: 35px;
   padding: 0 40px;
@@ -4796,10 +4790,7 @@ a.services-rest__item-img-wrap {
   font-family: 'OpenSansRegular';
   font-size: 14px;
   display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /*width: 425px;*/
   width: 49%;
   min-height: 70px;
   margin: 0 5px 5px 0;
@@ -4818,7 +4809,6 @@ a.services-rest__item-img-wrap {
   text-transform: uppercase;
 }
 
-/*    decider   */
 .price__decider {
   margin-bottom: 30px;
   padding: 45px 40px;

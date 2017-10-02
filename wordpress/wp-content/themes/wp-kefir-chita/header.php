@@ -34,15 +34,14 @@
     <div class="main-content">
       <header class="header main-header">
 
-        <div class="slider">
-          <div class="slider__item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/1.jpg);"></div>
-          <div class="slider__item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/2.jpg);"></div>
-          <div class="slider__item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/3.jpg);"></div>
-          <div class="slider__item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/4.jpg);"></div>
-          <div class="slider__item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/5.jpg);"></div>
-          <div class="slider__item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/6.jpg);"></div>
-        </div>
-        <div class="slider__controls"></div>
+        <?php if( have_rows('slider', 36) ): ?>
+          <div class="slider">
+            <?php while( have_rows('slider', 36) ): the_row(); $image = get_sub_field('image'); ?>
+              <div class="slider__item 111" style="background-image:url(<?php echo $image['url']; ?>);"></div>
+            <?php endwhile; ?>
+          </div>
+          <div class="slider__controls"></div>
+        <?php endif; ?>
 
         <div class="top-info">
           <div class="top-info__line">
@@ -63,24 +62,27 @@
             </div>
           </div>
           <div class="scontainer">
-            <div class="make-order make-order-2">
-            </div>
-            <div class="make-order"> <a href="#" class="make-order__link">Заказать звонок</a> </div>
+            <div class="make-order make-order-2"></div>
+            <div class="make-order"> <a href="#" class="make-order__link">Заказать звонок</a></div>
           </div>
           <div class="logo">
-            <a href="index.html" class="logo__link"> <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="exist" class="logo__img"> </a>            </div>
+            <a href="/" class="logo__link"> <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="exist" class="logo__img"></a>
+          </div>
         </div>
-        <div class="header-bottom">
-          <div class="slide-pager">
+
+        <?php if( have_rows('slider', 36) ): ?>
+          <div class="header-bottom">
+            <div class="slide-pager">
+            </div>
+            <div class="header-bottom__title">
+              <?php $i = 0; while( have_rows('slider', 36) ): the_row(); $content = get_sub_field('description'); ?>
+                <?php if ($i == 0 ) { $class = 'slider__title-active'; } else { $class = ''; }?>
+                <p data-slide-number='<?php echo $i; ?>' class="header-bottom__title-inner <?php echo $class; ?>"><?php echo $content; ?></p>
+              <?php $i++; endwhile; ?>
+            </div>
           </div>
-          <div class="header-bottom__title">
-            <p data-slide-number='0' class="header-bottom__title-inner slider__title-active">Незабываемые Моменты</p>
-            <p data-slide-number='1' class="header-bottom__title-inner ">Иксренние Эмоции</p>
-            <p data-slide-number='2' class="header-bottom__title-inner ">Яркие Воспоминания</p>
-            <p data-slide-number='3' class="header-bottom__title-inner ">Фейеричные Шоу</p>
-            <p data-slide-number='4' class="header-bottom__title-inner ">Свет, звук и Мультимедия</p>
-            <p data-slide-number='5' class="header-bottom__title-inner ">Любые Масштабы</p>
-          </div>
+        <?php endif; ?>
+
       </header>
 
       <header class="header mini-head" style="display:none">

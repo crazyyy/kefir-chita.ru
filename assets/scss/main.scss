@@ -3592,7 +3592,7 @@ body {
 /*         Bottom navigation       */
 
 .bottom-nav {
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 }
 
 /*     Footer        */
@@ -3821,7 +3821,7 @@ body {
   float: right;
 
   width: 500px;
-  padding: 70px 0;
+  padding: 0 0 70px;
 }
 
 .contact__form-inner {
@@ -4759,7 +4759,6 @@ a.services-rest__item-img-wrap {
 .guaranties__item-fourth {
   background-position: -370px 10px;
 }
-/*        Fee       */
 
 .price__fee {
   margin-bottom: 30px;
@@ -4792,7 +4791,6 @@ a.services-rest__item-img-wrap {
   margin-bottom: 20px;
 }
 
-/*    price -> services     */
 
 .price__serv {
   margin-bottom: 35px;
@@ -4812,10 +4810,7 @@ a.services-rest__item-img-wrap {
 
   display: inline-block;
 
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  /*width: 425px;*/
+      box-sizing: border-box;
   width: 49%;
   min-height: 70px;
   margin: 0 5px 5px 0;
@@ -4826,7 +4821,7 @@ a.services-rest__item-img-wrap {
   color: #34373c;
   background: white;
 
-      -ms-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   &:nth-child(2n) {
     margin-right: 0;
   }
@@ -4836,7 +4831,6 @@ a.services-rest__item-img-wrap {
   text-transform: uppercase;
 }
 
-/*    decider   */
 
 .price__decider {
   margin-bottom: 30px;
