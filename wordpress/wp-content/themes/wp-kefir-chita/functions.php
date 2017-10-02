@@ -429,7 +429,7 @@ function easy_breadcrumbs() {
   // Settings
   $separator          = ' &raquo; ';
   $breadcrums_id      = 'breadcrumbs';
-  $breadcrums_class   = 'breadcrumbs';
+  $breadcrums_class   = 'services-rest__breadcrumbs';
   $home_title         = __('Home', 'wpeasy');
 
   // If you have any custom post types with custom taxonomies, put the taxonomy name below (e.g. product_cat)
