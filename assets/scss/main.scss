@@ -5635,8 +5635,14 @@ a.services-rest__item-img-wrap {
   color: #a3a4aa;
   li {
     display: inline-block;
+    &.separator {
+      margin: 0 5px;
+    }
   }
   a {
+    font-family: 'OpenSansRegular';
+    font-size: 16px;
+
     color: #a3a4aa;
     span {
       color: #a3a4aa;

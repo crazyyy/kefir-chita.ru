@@ -117,7 +117,7 @@ function wpeHeadNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="headnav">%3$s</ul>',
+    'items_wrap'      => '<ul class="nav__list">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -140,7 +140,7 @@ function wpeFootNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="footernav">%3$s</ul>',
+    'items_wrap'      => '<ul class="nav__list">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -427,10 +427,10 @@ function single_result() {
 function easy_breadcrumbs() {
 
   // Settings
-  $separator          = ' &raquo; ';
+  $separator          = ' / ';
   $breadcrums_id      = 'breadcrumbs';
   $breadcrums_class   = 'services-rest__breadcrumbs';
-  $home_title         = __('Home', 'wpeasy');
+  $home_title         = 'Кефир';
 
   // If you have any custom post types with custom taxonomies, put the taxonomy name below (e.g. product_cat)
   $custom_taxonomy    = 'categories';

@@ -1,15 +1,26 @@
 <?php get_header(); ?>
 
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <section class="services-rest" id="firework">
+    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-      <h1 class="page-title inner-title"><?php the_title(); ?></h1>
-      <?php the_content(); ?>
-      <?php edit_post_link(); ?>
+      <div class="scontainer">
+        <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
+        <h1 class="services-rest__title"><?php the_title(); ?></h1>
+        <div class="services-rest__undertitle">
 
-    </article>
-  <?php endwhile; endif; ?>
+          <div class="seo_text">
 
-  <?php get_sidebar(); ?>
+            <?php if(get_field('seo_text')) { ?>
+              <h2><?php the_field('seo_text'); ?></h2>
+            <?php } ?>
+
+            <?php the_content(); ?>
+          </div>
+
+        </div><!-- services-rest__undertitle -->
+      </div><!-- scontainer -->
+
+    <?php endwhile; endif; ?>
+  </section>
 
 <?php get_footer(); ?>

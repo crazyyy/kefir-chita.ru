@@ -5511,7 +5511,13 @@ a.services-rest__item-img-wrap {
   display: inline-block;
 }
 
+.services-rest__breadcrumbs li.separator {
+  margin: 0 5px;
+}
+
 .services-rest__breadcrumbs a {
+  font-family: 'OpenSansRegular';
+  font-size: 16px;
   color: #a3a4aa;
 }
 
