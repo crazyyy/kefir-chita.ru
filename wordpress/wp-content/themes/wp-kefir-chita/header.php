@@ -58,7 +58,8 @@
                  <span class="phone-inner-color"> +7 (3022)</span> 57 02 70 </a>
                </div>
                 <a rel="nofollow" href="viber://add?number=+79143570270" style="margin-top:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/viber.png" alt=""></a>
-                <a rel="nofollow" href="whatsapp://+79143570270" style="margin-bottom:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/whasapp.png" alt=""></a>                </div>
+                <a rel="nofollow" href="whatsapp://+79143570270" style="margin-bottom:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/whasapp.png" alt=""></a>
+              </div>
             </div>
           </div>
           <div class="scontainer">

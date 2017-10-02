@@ -3764,8 +3764,6 @@ body {
   width: 100px;
 }
 
-/*         Bottom navigation       */
-/*     Footer        */
 .footer {
   padding: 25px 0;
   background: #d5dbed;
@@ -3891,7 +3889,6 @@ body {
   text-decoration: underline;
 }
 
-/*        Other pages       */
 .mini-head {
   position: relative;
   min-height: 230px;
@@ -3908,7 +3905,6 @@ body {
   background: rgba(255, 255, 255, 0.4);
 }
 
-/* made sticky footer*/
 .main-content {
   padding-bottom: 230px;
 }
@@ -3921,7 +3917,6 @@ body {
   height: 200px;
 }
 
-/*      Contacts        */
 .contact-me {
   padding: 50px 0;
 }
