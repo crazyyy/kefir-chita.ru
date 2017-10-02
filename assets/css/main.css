@@ -1291,7 +1291,6 @@ button.swiper-pagination-bullet {
 
 /* Misc visuals
 ----------------------------------*/
-/* Overlays */
 .ui-widget-overlay {
   position: fixed;
   top: 0;
@@ -1302,7 +1301,6 @@ button.swiper-pagination-bullet {
 
 .ui-tabs {
   position: relative;
-  /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
   padding: .2em;
 }
 
@@ -2504,8 +2502,8 @@ button.swiper-pagination-bullet {
   font-family: 'OpenSansRegular';
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
   src: url("../fonts/OpenSansRegular/OpenSansRegular.eot") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
 }
 
 /* font-family: "OpenSansLight"; */
@@ -2513,8 +2511,8 @@ button.swiper-pagination-bullet {
   font-family: 'OpenSansLight';
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/OpenSansLight/OpenSansLight.eot");
   src: url("../fonts/OpenSansLight/OpenSansLight.eot") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot");
 }
 
 /* font-family: "OpenSansBold"; */
@@ -2522,8 +2520,8 @@ button.swiper-pagination-bullet {
   font-family: 'OpenSansBold';
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/OpenSansBold/OpenSansBold.eot");
   src: url("../fonts/OpenSansBold/OpenSansBold.eot") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  src: url("../fonts/OpenSansBold/OpenSansBold.eot");
 }
 
 /* font-family: "OpenSansSemiBold"; */
@@ -2531,8 +2529,8 @@ button.swiper-pagination-bullet {
   font-family: 'OpenSansSemiBold';
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
   src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot") format("embedded-opentype"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
 }
 
 /* Magnific Popup CSS */
@@ -5495,11 +5493,6 @@ a.services-rest__item-img-wrap {
   margin: 0 10px 20px;
 }
 
-.ngg-gallery-thumbnail-box {
-  /*float:none !important;*/
-  /*margin-right:0 !important;*/
-}
-
 .ngg-gallery-thumbnail img {
   width: 270px;
   margin: 0 !important;
@@ -5510,8 +5503,8 @@ a.services-rest__item-img-wrap {
 }
 
 .services-rest__breadcrumbs {
-  color: #a3a4aa;
   list-style: none;
+  color: #a3a4aa;
 }
 
 .services-rest__breadcrumbs li {
@@ -5728,8 +5721,6 @@ p.services-rest__undertitle-text {
 
 .pie-wrap {
   padding: 10px;
-  background: -moz-linear-gradient(left, #23458d, #222c5c);
-  background: -ms-linear-gradient(left, #23458d, #222c5c);
   background: -o-linear-gradient(left, #23458d, #222c5c);
   background: -webkit-linear-gradient(left, #23458d, #222c5c);
 }
@@ -6181,8 +6172,6 @@ h3 {
 }
 
 #weddingList * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -6370,7 +6359,6 @@ h3 {
     transform: translate(0, 0);
     text-align: center;
     background: none;
-    -webkit-background-size: contain;
     background-size: contain;
   }
   .first-meet {
