@@ -7,7 +7,7 @@
         <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
         <h1 class="services-rest__title"><?php the_title(); ?></h1>
         <div class="services-rest__undertitle">
-
+        <?php endwhile; endif; ?>
         <div class="reviews__list">
 
           <?php query_posts( array('post_type' => review, 'showposts' => 15 )); ?>
@@ -36,7 +36,7 @@
         </div><!-- services-rest__undertitle -->
       </div><!-- scontainer -->
 
-    <?php endwhile; endif; ?>
+
   </section>
 
 <?php get_footer(); ?>
