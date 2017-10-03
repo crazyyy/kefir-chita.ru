@@ -32,8 +32,14 @@
 <body class="home page page-id-6 page-template page-template-front-page page-template-front-page-php">
   <div class="wrapper">
     <div class="main-content">
-      <header class="header main-header">
 
+      <?php if( is_page(36) ) { ?>
+        <header class="header main-header">
+      <?php } else { ?>
+        <header class="header mini-head">
+      <?php } ?>
+
+      <?php if( is_page(36) ) { ?>
         <?php if( have_rows('slider', 36) ): ?>
           <div class="slider">
             <?php while( have_rows('slider', 36) ): the_row(); $image = get_sub_field('image'); ?>
@@ -42,35 +48,36 @@
           </div>
           <div class="slider__controls"></div>
         <?php endif; ?>
+      <?php } ?>
 
-        <div class="top-info">
-          <div class="top-info__line">
-            <div class="scontainer clearfix">
-              <ul class="soc__list">
-                <li class="soc__item"> <a rel="nofollow" href="https://vk.com/kefir.chita" class="soc__item-link vk" target="_blank">vk</a> </li>
-                <li class="soc__item"> <a rel="nofollow" href="https://ok.ru/vayprazdnik/" class="soc__item-link fb" target="_blank">ok</a> </li>
-                <li class="soc__item"> <a rel="nofollow" href="https://www.instagram.com/agency_kefir/" class="soc__item-link ig" target="_blank"> ig</a></li>
-                <li class="soc__item"> <a rel="nofollow" href="https://www.youtube.com/channel/UCImzVImExLccARdvr2NAWQw" class="soc__item-link yt" target="_blank"> yt</a> </li>
-              </ul>
-              <div class="numbers" style="margin-bottom: -24px;">
-                <div class="numbers__phone"> <a style="display:block; margin: 2px 0 0 0;" href="tel:+79143570270" class="number__phone-inner">
-                 <span class="phone-inner-color">+7 (914)</span> 357 02 70</a><a rel="nofollow" href="tel:+79143570270" class="number__phone-inner">
-                 <span class="phone-inner-color"> +7 (3022)</span> 57 02 70 </a>
-               </div>
-                <a rel="nofollow" href="viber://add?number=+79143570270" style="margin-top:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/viber.png" alt=""></a>
-                <a rel="nofollow" href="whatsapp://+79143570270" style="margin-bottom:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/whasapp.png" alt=""></a>
-              </div>
+      <div class="top-info">
+        <div class="top-info__line">
+          <div class="scontainer clearfix">
+            <ul class="soc__list">
+              <li class="soc__item"> <a rel="nofollow" href="https://vk.com/kefir.chita" class="soc__item-link vk" target="_blank">vk</a> </li>
+              <li class="soc__item"> <a rel="nofollow" href="https://ok.ru/vayprazdnik/" class="soc__item-link fb" target="_blank">ok</a> </li>
+              <li class="soc__item"> <a rel="nofollow" href="https://www.instagram.com/agency_kefir/" class="soc__item-link ig" target="_blank"> ig</a></li>
+              <li class="soc__item"> <a rel="nofollow" href="https://www.youtube.com/channel/UCImzVImExLccARdvr2NAWQw" class="soc__item-link yt" target="_blank"> yt</a> </li>
+            </ul>
+            <div class="numbers" style="margin-bottom: -24px;">
+              <div class="numbers__phone"> <a style="display:block; margin: 2px 0 0 0;" href="tel:+79143570270" class="number__phone-inner">
+               <span class="phone-inner-color">+7 (914)</span> 357 02 70</a><a rel="nofollow" href="tel:+79143570270" class="number__phone-inner">
+               <span class="phone-inner-color"> +7 (3022)</span> 57 02 70 </a>
+             </div>
+              <a rel="nofollow" href="viber://add?number=+79143570270" style="margin-top:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/viber.png" alt=""></a>
+              <a rel="nofollow" href="whatsapp://+79143570270" style="margin-bottom:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/whasapp.png" alt=""></a>
             </div>
           </div>
-          <div class="scontainer">
-            <div class="make-order make-order-2"></div>
-            <div class="make-order"> <a href="#" class="make-order__link">Заказать звонок</a></div>
-          </div>
-          <div class="logo">
-            <a href="/" class="logo__link"> <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="exist" class="logo__img"></a>
-          </div>
         </div>
-
+        <div class="scontainer">
+          <div class="make-order make-order-2"></div>
+          <div class="make-order"> <a href="#" class="make-order__link">Заказать звонок</a></div>
+        </div>
+        <div class="logo">
+          <a href="/" class="logo__link"> <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="exist" class="logo__img"></a>
+        </div>
+      </div>
+      <?php if( is_page(36) ) { ?>
         <?php if( have_rows('slider', 36) ): ?>
           <div class="header-bottom">
             <div class="slide-pager">
@@ -83,42 +90,42 @@
             </div>
           </div>
         <?php endif; ?>
+      <?php } ?>
+    </header>
 
-      </header>
-
-      <header class="header mini-head" style="display:none">
-        <div class="top-info">
-          <div class="top-info__line">
-            <div class="scontainer clearfix">
-              <ul class="soc__list">
-                <li class="soc__item"> <a href="https://vk.com/kefir.chita" class="soc__item-link vk">vk</a> </li>
-                <li class="soc__item"> <a href="https://ok.ru/vayprazdnik/" class="soc__item-link fb">fb</a> </li>
-                <li class="soc__item"> <a href="https://www.instagram.com/agency_kefir/" class="soc__item-link ig"> ig</a></li>
-                <li class="soc__item"><a href="https://www.youtube.com/channel/UCImzVImExLccARdvr2NAWQw" class="soc__item-link yt"> yt</a></li>
-              </ul>
-              <div class="numbers" style="margin-bottom: -24px;">
-                <div class="numbers__phone"> <a href="tel:+79143570270" class="number__phone-inner">
-                  <span class="phone-inner-color">+7 (914)</span> 357 02 70</a>
-                  <a href="tel:+79143570270" class="number__phone-inner"><span class="phone-inner-color">+7 (914)</span> 357 02 70</a>
-                </div>
-                <a href="viber://add?number=+79143570270" style="margin-top:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/viber.png" alt=""></a>
-                <a href="whatsapp://:+79143570270" style="margin-bottom:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/whasapp.png" alt=""></a>
+    <header class="header mini-head" style="display:none">
+      <div class="top-info">
+        <div class="top-info__line">
+          <div class="scontainer clearfix">
+            <ul class="soc__list">
+              <li class="soc__item"> <a href="https://vk.com/kefir.chita" class="soc__item-link vk">vk</a> </li>
+              <li class="soc__item"> <a href="https://ok.ru/vayprazdnik/" class="soc__item-link fb">fb</a> </li>
+              <li class="soc__item"> <a href="https://www.instagram.com/agency_kefir/" class="soc__item-link ig"> ig</a></li>
+              <li class="soc__item"><a href="https://www.youtube.com/channel/UCImzVImExLccARdvr2NAWQw" class="soc__item-link yt"> yt</a></li>
+            </ul>
+            <div class="numbers" style="margin-bottom: -24px;">
+              <div class="numbers__phone"> <a href="tel:+79143570270" class="number__phone-inner">
+                <span class="phone-inner-color">+7 (914)</span> 357 02 70</a>
+                <a href="tel:+79143570270" class="number__phone-inner"><span class="phone-inner-color">+7 (914)</span> 357 02 70</a>
               </div>
+              <a href="viber://add?number=+79143570270" style="margin-top:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/viber.png" alt=""></a>
+              <a href="whatsapp://:+79143570270" style="margin-bottom:-25px;" class="numbers__btn1"><img src="<?php echo get_template_directory_uri(); ?>/img/whasapp.png" alt=""></a>
             </div>
           </div>
-          <div class="scontainer">
-            <div class="make-order make-order-2">
-              <a href="#" class="make-order__link">Заказать звонок</a> </div>
-          </div>
-          <div class="logo">
-            <a href="index.html" class="logo__link">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="exist" class="logo__img"> </a>
-          </div>
         </div>
-      </header>
-      <nav class="navigation">
         <div class="scontainer">
-          <a href="#" class="nav__title">Mеню</a>
-          <?php wpeHeadNav(); ?>
+          <div class="make-order make-order-2">
+            <a href="#" class="make-order__link">Заказать звонок</a> </div>
         </div>
-      </nav>
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="exist" class="logo__img"> </a>
+        </div>
+      </div>
+    </header>
+    <nav class="navigation">
+      <div class="scontainer">
+        <a href="#" class="nav__title">Mеню</a>
+        <?php wpeHeadNav(); ?>
+      </div>
+    </nav>

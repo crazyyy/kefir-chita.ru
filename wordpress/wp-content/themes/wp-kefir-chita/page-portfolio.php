@@ -8,14 +8,14 @@
         <h1 class="services-rest__title"><?php the_title(); ?></h1>
         <div class="services-rest__undertitle">
 
-          <div class="seo_text">
+          <div class="seo_rubrika_text">
 
             <?php if(get_field('seo_text')) { ?>
               <h2><?php the_field('seo_text'); ?></h2>
             <?php } ?>
 
             <?php the_content(); ?>
-          </div>
+          </div><!-- seo_rubrika_text -->
 
         </div><!-- services-rest__undertitle -->
       </div><!-- scontainer -->
