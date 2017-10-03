@@ -696,6 +696,41 @@ function post_type_review() {
   register_post_type( 'review' , $args );
 }
 
+add_action( 'init', 'post_type_services' );
+function post_type_services() {
+  $labels = array(
+    'name'=> 'Услуги',
+    'singular_name' => 'Услуги',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent',
+  );
+  $args = array(
+    'labels' => $labels,
+    'description' => 'Services Post Type',
+    'public' => true,
+    'exclude_from_search' => true,
+    'show_ui' => true,
+    'menu_position' => 3,
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-cart',
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'rewrite' => array( 'slug' => 'services' ),
+    'show_in_rest' => true
+  );
+  register_post_type( 'services' , $args );
+}
+
 add_action( 'init', 'disable_wp_emojicons' );
 function disable_wp_emojicons() {
   // all actions related to emojis
