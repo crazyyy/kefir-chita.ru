@@ -1924,7 +1924,7 @@ button.swiper-pagination-bullet {
 .bx-wrapper {
   position: relative;
 
-  margin: 0 auto 10px;
+  margin: 0 auto;
   padding: 0;
 
   *zoom: 1;
@@ -2121,8 +2121,8 @@ button.swiper-pagination-bullet {
   font-weight: normal;
   font-style: normal;
 
-  src: url('../fonts/OpenSansRegular/OpenSansRegular.eot') format('embedded-opentype'), url('../fonts/OpenSansRegular/OpenSansRegular.woff') format('woff'), url('../fonts/OpenSansRegular/OpenSansRegular.ttf') format('truetype');
   src: url('../fonts/OpenSansRegular/OpenSansRegular.eot');
+  src: url('../fonts/OpenSansRegular/OpenSansRegular.eot') format('embedded-opentype'), url('../fonts/OpenSansRegular/OpenSansRegular.woff') format('woff'), url('../fonts/OpenSansRegular/OpenSansRegular.ttf') format('truetype');
 }
 
 /* font-family: "OpenSansLight"; */
@@ -2131,8 +2131,8 @@ button.swiper-pagination-bullet {
   font-weight: normal;
   font-style: normal;
 
-  src: url('../fonts/OpenSansLight/OpenSansLight.eot') format('embedded-opentype'), url('../fonts/OpenSansLight/OpenSansLight.woff') format('woff'), url('../fonts/OpenSansLight/OpenSansLight.ttf') format('truetype');
   src: url('../fonts/OpenSansLight/OpenSansLight.eot');
+  src: url('../fonts/OpenSansLight/OpenSansLight.eot') format('embedded-opentype'), url('../fonts/OpenSansLight/OpenSansLight.woff') format('woff'), url('../fonts/OpenSansLight/OpenSansLight.ttf') format('truetype');
 }
 
 /* font-family: "OpenSansBold"; */
@@ -2141,8 +2141,8 @@ button.swiper-pagination-bullet {
   font-weight: normal;
   font-style: normal;
 
-  src: url('../fonts/OpenSansBold/OpenSansBold.eot') format('embedded-opentype'), url('../fonts/OpenSansBold/OpenSansBold.woff') format('woff'), url('../fonts/OpenSansBold/OpenSansBold.ttf') format('truetype');
   src: url('../fonts/OpenSansBold/OpenSansBold.eot');
+  src: url('../fonts/OpenSansBold/OpenSansBold.eot') format('embedded-opentype'), url('../fonts/OpenSansBold/OpenSansBold.woff') format('woff'), url('../fonts/OpenSansBold/OpenSansBold.ttf') format('truetype');
 }
 
 /* font-family: "OpenSansSemiBold"; */
@@ -2151,8 +2151,8 @@ button.swiper-pagination-bullet {
   font-weight: normal;
   font-style: normal;
 
-  src: url('../fonts/OpenSansSemiBold/OpenSansSemiBold.eot') format('embedded-opentype'), url('../fonts/OpenSansSemiBold/OpenSansSemiBold.woff') format('woff'), url('../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf') format('truetype');
   src: url('../fonts/OpenSansSemiBold/OpenSansSemiBold.eot');
+  src: url('../fonts/OpenSansSemiBold/OpenSansSemiBold.eot') format('embedded-opentype'), url('../fonts/OpenSansSemiBold/OpenSansSemiBold.woff') format('woff'), url('../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf') format('truetype');
 }
 
 /* Magnific Popup CSS */
@@ -3590,7 +3590,7 @@ body {
 }
 
 .footer {
-  padding: 25px 0;
+  padding: 32px 0;
 
   background: #d5dbed;
 }
@@ -4142,7 +4142,7 @@ body {
 /*        Services    */
 
 .services {
-  padding: 50px 0;
+  // padding: 50px 0;
 }
 
 .services__title {
@@ -4281,6 +4281,7 @@ body {
   font-size: 16px;
 
   margin-bottom: 30px;
+  margin-left: 0;
 }
 
 .services-rest__breadcrumbs-first {
@@ -4411,8 +4412,6 @@ a.services-rest__item-img-wrap {
 /*#weddingList .wedImgPar {box-shadow: 0 0 0 5px #374FA4;}*/
 
 .ngg-galleryoverview .services-rest__item {
-  border-image:    -moz-linear-gradient(left, #374fa4, #233251) 10;
-  border-image:     -ms-linear-gradient(left, #374fa4, #233251) 10;
   border-image:      -o-linear-gradient(left, #374fa4, #233251) 10;
   border-image: -webkit-linear-gradient(left, #374fa4, #233251) 10;
   &:hover {
@@ -5492,6 +5491,17 @@ a.services-rest__item-img-wrap {
 .logout__list .services-rest__item,
 .firework__list .services-rest__item {
   margin-bottom: 30px;
+}
+
+.port-inner__photo-list {
+  a {
+    display: inline-block;
+    width: 50%;
+    padding: 0 10px;
+    img{
+      width: 100%;
+    }
+  }
 }
 
 /*    specific restaurant   */

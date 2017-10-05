@@ -70,6 +70,9 @@ function wpeHeaderScripts() {
     wp_register_script('wow', '//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js', array(), '2.8.3', true);
     wp_enqueue_script('wow');
 
+    wp_register_script('bPopup', '//cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js', array(), '0.11.0', true);
+    wp_enqueue_script('bPopup');
+
     wp_deregister_script( 'jquery-form' );
 
     //  Load footer scripts (footer.php)
@@ -746,25 +749,40 @@ function post_type_services() {
   register_post_type( 'services' , $args );
 }
 
-add_action( 'init', 'disable_wp_emojicons' );
-function disable_wp_emojicons() {
-  // all actions related to emojis
-  remove_action( 'admin_print_styles', 'print_emoji_styles' );
-  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-  remove_action( 'wp_print_styles', 'print_emoji_styles' );
-  remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-  remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-  remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
-  // filter to remove TinyMCE emojis
-  add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
+add_action( 'init', 'post_type_portfolio' );
+function post_type_portfolio() {
+  $labels = array(
+    'name'=> 'Портфолио',
+    'singular_name' => 'Портфолио',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent',
+  );
+  $args = array(
+    'labels' => $labels,
+    'description' => 'Portfolio Post Type',
+    'public' => true,
+    'exclude_from_search' => true,
+    'show_ui' => true,
+    'menu_position' => 3,
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-format-gallery',
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'rewrite' => array( 'slug' => 'portfolio' ),
+    'show_in_rest' => true
+  );
+  register_post_type( 'portfolio' , $args );
 }
-function disable_emojicons_tinymce( $plugins ) {
-  if ( is_array( $plugins ) ) {
-    return array_diff( $plugins, array( 'wpemoji' ) );
-  } else {
-    return array();
-  }
-}
+
 
 ?>

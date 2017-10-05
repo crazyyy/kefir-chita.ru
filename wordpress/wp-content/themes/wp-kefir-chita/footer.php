@@ -48,15 +48,7 @@
           <div class="popup-block">
             <a href="#" class="popup__close b-close">X</a>
             <p class="popup__title">Заказать звонок</p>
-            <form action="index.html" class="popup__form">
-              <span class="popup__name">Ваше имя</span>
-              <input type="text" name="name" class="popup__name-input">
-              <span class="popup__name">Ваш телефон</span>
-              <input type="text" name="phone" class="popup__name-input" onFocus="removeError(this)" id='phone'>
-              <div class="popup__btn">
-                <a href="#" class="popup__btn-link submit">Отправить</a>
-              </div>
-            </form>
+            <?php echo do_shortcode('[contact-form-7 id="241" title="Модальное окно" html_class="popup__form"]'); ?>
           </div>
         </div>
       </div><!-- popup -->
