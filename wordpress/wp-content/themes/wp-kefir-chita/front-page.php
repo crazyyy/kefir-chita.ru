@@ -47,7 +47,7 @@
           </li>
           <li class="goals__item wow fadeIn" data-wow-offset="200" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/5.png);">
             <p class="goals__item-title">ВЫСОКОЕ КАЧЕСТВО</p>
-            <span class="goals__item-descr">делаем Вам, как Себе. Вы получаете готовое мероприятие достойного уровня.</span> </li>
+            <span class="goals__item-descr">делаем Вам, как Себе. Вы получаете готовое мероприятие достойного уровня.</span></li>
           <li class="goals__item wow fadeIn" data-wow-offset="200" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/6.png);">
             <p class="goals__item-title">ОТЛИЧНЫЙ РЕЗУЛЬТАТ</p>
             <span class="goals__item-descr">высокий уровень обслуживания и качество предоставляемых услуг.</span>
@@ -62,12 +62,12 @@
         <p class="advantage__title">Наши преимущества</p>
         <div class="advantage__list">
           <div class="advantage__item" data-wow-offset="200">
-            <span class="advantage__item-inner"><span class="advantage__item-color"></span><b>Индивидуальный подход к каждому клиенту</b> </span>
-            <span class="advantage__item-bottom"><span class="advantage__item-color"></span> <b> Большой опыт работы, 6 лет на рынке</b></span>
+            <span class="advantage__item-inner"><span class="advantage__item-color"></span><b>Индивидуальный подход к каждому клиенту</b></span>
+            <span class="advantage__item-bottom"><span class="advantage__item-color"></span><b> Большой опыт работы, 6 лет на рынке</b></span>
           </div>
           <div class="advantage__item" data-wow-offset="200">
             <span class="advantage__item-inner">
-              <span class="advantage__item-color"> </span><b>Мы работаем с любым бюджетом</b></span>
+              <span class="advantage__item-color"></span><b>Мы работаем с любым бюджетом</b></span>
               <span class="advantage__item-bottom"><span class="advantage__item-color"></span>
               <b>Мы подарим вам море положительных эмоций</b></span>
           </div>
@@ -125,73 +125,30 @@
           <span class="contact__item-title">Мы в соц. сетях:</span>
           <div class="contact__item-contain">
             <ul class="othersoc__list">
-              <li class="othersoc__item"> <a target="_blank" href="https://vk.com/kefir.chita" class="othersoc__list-link other-vk">vk</a></li>
-              <li class="othersoc__item"> <a target="_blank" href="https://ok.ru/vayprazdnik/" class="othersoc__list-link other-fb">ok</a></li>
-              <li class="othersoc__item"> <a target="_blank" href="https://www.instagram.com/agency_kefir/" class="othersoc__list-link other-in">in</a> </li>
-              <li class="othersoc__item"> <a target="_blank" href="https://www.youtube.com/channel/UCImzVImExLccARdvr2NAWQw" class="othersoc__list-link other-yt">yt</a> </li>
+              <li class="othersoc__item"><a target="_blank" href="https://vk.com/kefir.chita" class="othersoc__list-link other-vk">vk</a></li>
+              <li class="othersoc__item"><a target="_blank" href="https://ok.ru/vayprazdnik/" class="othersoc__list-link other-fb">ok</a></li>
+              <li class="othersoc__item"><a target="_blank" href="https://www.instagram.com/agency_kefir/" class="othersoc__list-link other-in">in</a></li>
+              <li class="othersoc__item"><a target="_blank" href="https://www.youtube.com/channel/UCImzVImExLccARdvr2NAWQw" class="othersoc__list-link other-yt">yt</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="contact__form wow fadeIn" data-wow-delay='200ms' data-wow-offset='200'>
         <div class="contact__form-inner">
-
-          <form action="index.html" class="form">
-            <p class="form__title">Оставьте заявку</p> <span class="input__name">Ваше имя:</span>
-            <input type="text" class="contact__input" name="name"> <span class="input__name">Ваш телефон (обязательно):</span>
-            <input type="text" class="contact__input cb_phone" id='cont-phone' name="phone"> <span class="input__name">Введите E-mail (обязательно):</span>
-            <input type="email" class="contact__input cb_mail" name="mail"> <span class="input__name">Ваш текст:</span>
-            <textarea class="contact__textarea" name="msg"></textarea>
-            <div class="btn-wrap"><a class="contact-me__btn submit" href="#">Отправить</a></div>
-          </form>
-
-
+          <?php echo do_shortcode('[contact-form-7 id="240" title="Форма на главной" html_class="form" ]'); ?>
         </div>
       </div>
       <div class="clearfix"></div>
       <div class="contact__text wow fadeIn">
 
         <div class="seo_text">
-          <h2>Event агентство Кефир</h2>
-          <p>Мы помогаем реализовывать event-проекты, которые оставляют глубокие и яркие впечатления, мы умеем разрабатывать качественный контент мероприятий. В основе нашей работы лежит 7-ми летний опыт организации праздников. Мы уже реализовали свыше 1 500 мероприятий, от детских праздников до благотворительных концертов.</p>
-          <p>Event-агентство Читы начало вести свою деятельность с 2010 года. Первое время мы работали только в сфере организации детских праздников, изначально наша компания называлась "Вау! Праздник". После смены руководства, комания начала активно разиваться и применять свой опыт в организации свадеб, юбилеев, корпоративов, концертов, промо-акций и т.д. </p>
-          <p class="services-rest__undertitle-text">
-            <div class="ngg-galleryoverview ngg-ajax-pagination-none" id="ngg-gallery-0405a2bbad82191ac816ac64f52db1f5-1">
-              <div id="ngg-image-0" class="ngg-gallery-thumbnail-box">
-                <div class="ngg-gallery-thumbnail">
-                  <a rel="lightbox" href="<?php echo get_template_directory_uri(); ?>/img/serega.jpg" title="Event агентство Кефир" class="ngg-fancybox">
-                    <img title="Event агентство Кефир" alt="Event агентство Кефир" src="<?php echo get_template_directory_uri(); ?>/img/serega.jpg" width="460" height="590" style="max-width:none;" />
-                  </a>
-                </div>
-              </div>
-              <div id="ngg-image-1" class="ngg-gallery-thumbnail-box">
-                <div class="ngg-gallery-thumbnail">
-                  <a href="<?php echo get_template_directory_uri(); ?>/img/ivan.jpg" title="event агентство" data-src="<?php echo get_template_directory_uri(); ?>/img/ivan.jpg" data-thumbnail="img/ivan.jpg" data-image-id="318" data-title="event агентство" data-description="event агентство" class="ngg-fancybox" rel="0405a2bbad82191ac816ac64f52db1f5">
-                    <img title="event агентство" alt="event агентство" src="<?php echo get_template_directory_uri(); ?>/img/ivan.jpg" width="460" height="307" style="max-width:none;" />
-                  </a>
-                </div>
-              </div>
-              <div id="ngg-image-2" class="ngg-gallery-thumbnail-box">
-                <div class="ngg-gallery-thumbnail">
-                  <a href="<?php echo get_template_directory_uri(); ?>/img/kvest.jpg" title="Организация праздников Чита" data-src="<?php echo get_template_directory_uri(); ?>/img/kvest.jpg" data-thumbnail="img/kvest.jpg" data-image-id="319" data-title="Организация праздников Чита" data-description="свадебное агентство москва" class="ngg-fancybox" rel="0405a2bbad82191ac816ac64f52db1f5">
-   <img title="Организация праздников Чита" alt="Организация праздников Чита"
-    src="<?php echo get_template_directory_uri(); ?>/img/kvest.jpg" width="460" height="307" style="max-width:none;" /> </a> </div>
-              </div>
-              <div class='ngg-clear'></div>
-            </div>
-          </p>
-          <h2>Праздник мечты от агентства Кефир</h2>
-          <p>Праздник мечты – это такое событие, которое запомнится навсегда. Это такой день, который наполнен положительными эмоциями, радостью, счастьем, в такие моменты хочется, чтобы этот день никогда не заканчивался, а продолжался как можно дольше. Праздник мечты наполнен яркими красками, веселыми моментами, восторгом, счастливыми улыбками людей, смехом.</p>
-          <h2>Заказать услугу у агентства Кефир</h2>
-          <p> Если вы хотите, чтобы ничто, никто не испортил вам ваше мероприятие, мы предлагаем обращаться только к профессионалам своего дела, мы как Компания несем полную ответсвенность за качество услуг, которые предлагаем вам, весь штат артистов проходит тщательный отбор. Уж, поверьте, что студент-звукорежиссер, менеджер по будням, тамада по выходным никогда не сможет составить конкуренцию артистам, которые занимаются только своим делом.</p>
+          <?php the_field('seotext'); ?>
         </div>
         <p class="wedding-key__title" style="text-align: left;">Следите за нами в Инстаграмм</p>
-        <p>
-          <p>
 
-          dataInsta
-          </p>
-      </div>
+        <?php echo do_shortcode('[instashow id="1"]'); ?>
+
+      </div><!-- contact__text -->
     </div>
     <?php endwhile; endif; ?>
   </section>
