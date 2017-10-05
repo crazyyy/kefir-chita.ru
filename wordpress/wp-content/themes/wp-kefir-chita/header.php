@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="home page page-id-6 page-template page-template-front-page page-template-front-page-php">
+<body <?php body_class(); ?>>
   <div class="wrapper">
     <div class="main-content">
 

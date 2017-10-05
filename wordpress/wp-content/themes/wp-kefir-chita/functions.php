@@ -55,6 +55,21 @@ function wpeHeaderScripts() {
     wp_register_script('modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array(), '2.8.3');
     wp_enqueue_script('modernizr');
 
+    wp_register_script('jquery-ui', '//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array(), '1.12.1');
+    wp_enqueue_script('jquery-ui');
+
+    wp_register_script('fancybox', '//cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js', array(), '3.1.25');
+    wp_enqueue_script('fancybox');
+
+    wp_register_script('bxslider', '//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js', array(), '4.2.12');
+    wp_enqueue_script('bxslider');
+
+    wp_register_script('magnific-popup', '//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js', array(), '1.1.0');
+    wp_enqueue_script('magnific-popup');
+
+    wp_register_script('wow', '//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js', array(), '2.8.3');
+    wp_enqueue_script('wow');
+
     wp_deregister_script( 'jquery-form' );
 
     //  Load footer scripts (footer.php)

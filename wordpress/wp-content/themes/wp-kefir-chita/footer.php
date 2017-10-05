@@ -65,20 +65,5 @@
 
   <?php wp_footer(); ?>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-  <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/livequery.js'></script>
-  <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/functions.js'></script>
-  <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/jquery.sidr.min.js'></script>
-  <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/swiper.jquery.min.js'></script>
-  <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/jquery.bpopup.min.js'></script>
-  <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/inputPlugin.js'></script>
-  <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/common.js'></script>
-  <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/main.js'></script>
-
 </body>
 </html>
